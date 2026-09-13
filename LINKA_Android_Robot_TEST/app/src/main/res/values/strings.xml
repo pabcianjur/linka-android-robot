@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LINKA Robot TEST</string>
+    <string name="accessibility_label">LINKA Robot GForm</string>
+    <string name="accessibility_description">Membantu mengisi formulir pelaporan BRILink yang dimulai oleh pengguna. Robot berhenti sebelum tombol Kirim.</string>
+</resources>
