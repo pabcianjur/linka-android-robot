@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BRIPORT Robot</string>
+    <string name="accessibility_label">BRIPORT Robot Accessibility</string>
+</resources>

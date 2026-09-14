@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1456A0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>BRIPORT — Pelaporan BRILink</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="bri">BRI</div>
+      <div>
+        <div class="logo">BRIPORT</div>
+        <div class="subtitle">Pelaporan BRILink Agen</div>
+      </div>
+    </div>
+    <span class="test-badge">FINAL</span>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Pelaporan Aktivitas</h1>
+      <p class="muted">BO Cianjur • Role PPBK</p>
+
+      <label>Unit Kerja</label>
+      <select id="unitKerja">
+        <option value="">Pilih Unit Kerja</option>
+      </select>
+
+      <label>Nama PPBK</label>
+      <select id="namaPPBK">
+        <option value="">Pilih Nama PPBK</option>
+      </select>
+
+      <label>Jenis Pelaporan</label>
+      <select id="jenisPelaporan">
+        <option value="">Pilih Jenis Pelaporan</option>
+      </select>
+
+      <label>ID Outlet</label>
+      <input id="idOutlet" type="text" inputmode="numeric" placeholder="Contoh: 11223344">
+
+      <label>Nama Agen</label>
+      <input id="namaAgen" type="text" placeholder="Nama Agen">
+
+      <label>Sumber Akuisisi / Tambah Alat</label>
+      <select id="sumberAkuisisi"><option>Referral Unit</option><option>SRC</option><option>BRIMOLA</option><option>BUMDes</option><option>KUD/Koperasi</option><option>Indogrosir</option><option>PNM</option></select>
+
+      <label>Sumber Dana</label>
+      <select id="sumberDana"><option>Transaksi Agen</option><option>Dana Talangan Bank Raya</option></select>
+
+      <label>Nominal Pencairan Dana Talangan</label>
+      <input id="nominalPencairan" type="number" inputmode="numeric">
+
+      <label>Total Nominal Trx Kembali ke BRILink</label>
+      <input id="trxKembali" type="number" inputmode="numeric">
+
+      <label>Berapa kali ditransaksikan kembali</label>
+      <input id="frekuensiKembali" type="number" inputmode="numeric">
+
+      <label>Foto Bukti</label>
+
+      <div class="photo-actions">
+        <button id="galleryBtn" class="secondary-btn" type="button" onclick="openGallery()">
+          🖼️ Pilih dari Galeri
+        </button>
+        <button id="cameraBtn" class="secondary-btn" type="button" onclick="openCamera()">
+          📷 Ambil Foto
+        </button>
+      </div>
+
+      <input id="galleryInput" class="hidden-input" type="file" accept="image/*">
+      <input id="cameraInput" class="hidden-input" type="file" accept="image/*" capture="environment">
+
+      <div id="photoName" class="photo-name">Belum ada foto dipilih.</div>
+      <img id="preview" class="preview hidden" alt="Preview foto">
+
+      <button id="submitBtn" class="primary-btn" type="button" onclick="submitReport()">MULAI PELAPORAN</button>
+
+      <div id="status" class="status">Siap. BRIPORT FINAL siap digunakan.</div>
+    </section>
+
+    <section class="card">
+      <h2>Ringkasan</h2>
+      <pre id="summary">Belum ada data.</pre>
+    </section>
+
+    <p class="warning">🔐 FINAL: BRIPORT menyiapkan data + foto, lalu membuka BRIPORT Robot Android untuk mengisi, upload bukti, dan mengirim GForm resmi.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
