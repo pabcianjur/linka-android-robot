@@ -4,5 +4,5 @@
     android:notificationTimeout="100"
     android:canRetrieveWindowContent="true"
     android:canPerformGestures="true"
-    android:description="BRIPORT menggunakan aksesibilitas untuk membantu pengguna mengisi dan mengirim laporan BRILink yang diminta pengguna melalui Google Forms."
+    android:description="@string/accessibility_description"
     android:settingsActivity="com.briport.app.MainActivity" />
