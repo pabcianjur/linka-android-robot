@@ -1,4 +1,4 @@
-name: Build LINKA APK
+name: Build BRIPORT APK
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: LINKA_Android_Robot_TEST
+        working-directory: BRIPORT_REPO_FINAL
 
     steps:
       - name: Checkout source
@@ -29,11 +29,11 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Build Debug APK
+      - name: Build BRIPORT APK
         run: gradle assembleDebug --no-daemon
 
-      - name: Upload APK
+      - name: Upload BRIPORT APK
         uses: actions/upload-artifact@v4
         with:
-          name: LINKA-Robot-TEST-APK
-          path: LINKA_Android_Robot_TEST/app/build/outputs/apk/debug/*.apk
+          name: BRIPORT-APK
+          path: BRIPORT_REPO_FINAL/app/build/outputs/apk/debug/*.apk
