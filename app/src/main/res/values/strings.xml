@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BRIPORT Robot</string>
     <string name="accessibility_label">BRIPORT Robot Accessibility</string>
+    <string name="accessibility_service_description">
+    BRIPORT mengisi dan mengirim laporan BRILink melalui Google Forms.
+</string>
 </resources>
