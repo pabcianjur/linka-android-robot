@@ -1,0 +1,9 @@
+{
+  "name":"BRIPORT Pelaporan BRILink FINAL",
+  "short_name":"BRIPORT",
+  "start_url":".",
+  "display":"standalone",
+  "background_color":"#eef4fa",
+  "theme_color":"#1456a0",
+  "icons":[]
+}
